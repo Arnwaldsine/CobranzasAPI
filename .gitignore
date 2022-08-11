@@ -1,0 +1,11 @@
+﻿/APICobranzas.Api/bin
+/APICobranzas.Infra.Data/bin
+/APICobranzas.Infra.Data/obj
+/APICobranzas.Infra.IoC/bin
+/APICobranzas.Infra.IoC/obj
+/APICobranzas.Domain/bin
+/APICobranzas.Domain/obj
+/APICobranzas.Application/bin
+/APICobranzas.Application/obj
+/APICobranzas.Api/obj
+/APICobranzas.Api/appsettings.json

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "type": "identityapp",
+      "connectionId": "",
+      "suggestion": "true",
+      "ignored": "true"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/cobranzasaf/databases/Cobranzas",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:AzureConnection",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

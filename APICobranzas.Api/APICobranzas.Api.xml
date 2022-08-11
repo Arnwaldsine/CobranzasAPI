@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APICobranzas.Api</name>
+    </assembly>
+    <members>
+        <member name="M:APICobranzas.Api.Controllers.FacturasController.Get">
+            <summary>
+            Obtiene la lista de todas las facturas registradas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APICobranzas.Api.Controllers.FacturasController.GetById(System.Int32)">
+            <summary>
+            Obtiene una factura de acuerdo a su clave primaria
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna un objeto Factura con sus entidades relacionadas</returns>
+        </member>
+        <member name="M:APICobranzas.Api.Controllers.FacturasController.Post(APICobranzas.Application.Request.FacturaRequestModel)">
+             <summary>
+             
+             </summary>
+             <param name="factura"></param>
+             <remarks>
+                 POST /factura
+                 {
+                        "id": 0,
+                        "obraSocialId": 1,
+                       "puntoVentaId": 2,
+                       "importeFactura": 100,
+                       "importeCobrado": 0,
+                      "estadoId": 1,
+                      "observacion": "quizas pagan"
+                }
+             </remarks>
+            
+             <returns></returns>
+            <response code="201">Creado Satisfactoriamente</response> 
+            <response code="400">Hay errores de validacion</response> 
+            <response code="401">La solicitud no esta autenticada</response> 
+            <response code="500">Error del servidor</response> 
+        </member>
+    </members>
+</doc>
