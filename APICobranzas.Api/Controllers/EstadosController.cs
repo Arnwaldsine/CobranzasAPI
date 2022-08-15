@@ -44,33 +44,6 @@ namespace APICobranzas.Api.Controllers
                 return Problem(ex.Message);
                }
         }
-        /*
-        /// <summary>
-        /// Retorna un estado y las facturas asociadas al mismo
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        // GET api/<EstadosController>/5
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(EstadoDTO))]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [Authorize]
-        [HttpGet("{id}")]
-        public async Task<ActionResult<EstadoDTO>> Get(int id)
-        {
-            try
-            {
-                var es = await _service.GetEstados();
-                if (es is null) return NotFound("El estado solicitado no existe");
-                return Ok(es);
 
-            }
-            catch (Exception ex)
-            {
-                return Problem(ex.Message);
-            }
-        }*/
-    
     }
 }
