@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace APICobranzas.Infra.Data.Context.Configurations
 {
-   public class NotaCreditoConfiguration : IEntityTypeConfiguration<NotaCredito>
+   public class FacturaDebitoConfiguration : IEntityTypeConfiguration<FacturaDebito>
     {
-        public void Configure(EntityTypeBuilder<NotaCredito> builder)
+        public void Configure(EntityTypeBuilder<FacturaDebito> builder)
         {
-            builder.Property(z => z.Total).HasPrecision(10, 2);
+            builder.Property(x => x.Subtotal).HasPrecision(10, 2);
         }
     }
 }

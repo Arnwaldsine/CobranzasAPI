@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace APICobranzas.Infra.Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -357,7 +357,7 @@ namespace APICobranzas.Infra.Data.Migrations
                 {
                     FacturaId = table.Column<int>(type: "int", nullable: false),
                     NotaDebitoId = table.Column<int>(type: "int", nullable: false),
-                    Subtotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Subtotal = table.Column<decimal>(type: "decimal(10,2)", precision: 10, scale: 2, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -454,8 +454,8 @@ namespace APICobranzas.Infra.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "dd610c55-6621-4695-82dd-6503433c3fc3", "31d03e4a-2265-485a-9431-4f4a0161446c", "Usuario", "USUARIO" },
-                    { "3c49a50c-fc49-40dc-8736-8e06f845d4f9", "a6c7fe90-d7ec-4760-9c02-1266f216c797", "Administrador", "ADMINISTRADOR" }
+                    { "bfd8bf4b-a303-4900-84b2-e56e6acee1a6", "cf6c2b5c-3038-4331-b7d1-536d2ee4015a", "Usuario", "USUARIO" },
+                    { "320b3d3d-754c-4c61-956d-77dbd7fe0a5c", "0842576e-cc0e-4135-93fd-8dd1a71b6d3a", "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -463,18 +463,18 @@ namespace APICobranzas.Infra.Data.Migrations
                 columns: new[] { "Id", "Numero", "Punto" },
                 values: new object[,]
                 {
-                    { 12, 25, "Broderick Orn" },
-                    { 14, 27, "Marquise Blanda" },
-                    { 16, 29, "Harmon Dicki" },
-                    { 18, 31, "Edison Purdy" },
-                    { 20, 33, "Walker Dibbert" },
-                    { 22, 35, "Terrell Conroy" },
-                    { 24, 37, "Hadley Krajcik" },
-                    { 26, 39, "Thelma Daugherty" },
-                    { 28, 41, "Burdette Jones" },
-                    { 30, 43, "Lamont Batz" },
-                    { 32, 45, "Jason Sanford" },
-                    { 34, 47, "Nettie Ritchie" }
+                    { 12, 25, "Coleman Graham" },
+                    { 14, 27, "Agustina Reichert" },
+                    { 16, 29, "Samanta Pagac" },
+                    { 18, 31, "Elinor Ryan" },
+                    { 20, 33, "Anika Mayer" },
+                    { 22, 35, "Simeon Reinger" },
+                    { 24, 37, "Carol Reichel" },
+                    { 26, 39, "Antwan Quitzon" },
+                    { 28, 41, "Verna Bartell" },
+                    { 30, 43, "Annetta Haag" },
+                    { 32, 45, "Lillie Crooks" },
+                    { 34, 47, "Conrad Turner" }
                 });
 
             migrationBuilder.CreateIndex(

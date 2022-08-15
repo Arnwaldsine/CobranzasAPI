@@ -132,7 +132,8 @@ namespace APICobranzas.Infra.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Subtotal")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
 
                     b.HasKey("FacturaId", "NotaDebitoId");
 
@@ -404,73 +405,73 @@ namespace APICobranzas.Infra.Data.Migrations
                         {
                             Id = 12,
                             Numero = 25,
-                            Punto = "Broderick Orn"
+                            Punto = "Coleman Graham"
                         },
                         new
                         {
                             Id = 14,
                             Numero = 27,
-                            Punto = "Marquise Blanda"
+                            Punto = "Agustina Reichert"
                         },
                         new
                         {
                             Id = 16,
                             Numero = 29,
-                            Punto = "Harmon Dicki"
+                            Punto = "Samanta Pagac"
                         },
                         new
                         {
                             Id = 18,
                             Numero = 31,
-                            Punto = "Edison Purdy"
+                            Punto = "Elinor Ryan"
                         },
                         new
                         {
                             Id = 20,
                             Numero = 33,
-                            Punto = "Walker Dibbert"
+                            Punto = "Anika Mayer"
                         },
                         new
                         {
                             Id = 22,
                             Numero = 35,
-                            Punto = "Terrell Conroy"
+                            Punto = "Simeon Reinger"
                         },
                         new
                         {
                             Id = 24,
                             Numero = 37,
-                            Punto = "Hadley Krajcik"
+                            Punto = "Carol Reichel"
                         },
                         new
                         {
                             Id = 26,
                             Numero = 39,
-                            Punto = "Thelma Daugherty"
+                            Punto = "Antwan Quitzon"
                         },
                         new
                         {
                             Id = 28,
                             Numero = 41,
-                            Punto = "Burdette Jones"
+                            Punto = "Verna Bartell"
                         },
                         new
                         {
                             Id = 30,
                             Numero = 43,
-                            Punto = "Lamont Batz"
+                            Punto = "Annetta Haag"
                         },
                         new
                         {
                             Id = 32,
                             Numero = 45,
-                            Punto = "Jason Sanford"
+                            Punto = "Lillie Crooks"
                         },
                         new
                         {
                             Id = 34,
                             Numero = 47,
-                            Punto = "Nettie Ritchie"
+                            Punto = "Conrad Turner"
                         });
                 });
 
@@ -612,15 +613,15 @@ namespace APICobranzas.Infra.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "dd610c55-6621-4695-82dd-6503433c3fc3",
-                            ConcurrencyStamp = "31d03e4a-2265-485a-9431-4f4a0161446c",
+                            Id = "bfd8bf4b-a303-4900-84b2-e56e6acee1a6",
+                            ConcurrencyStamp = "cf6c2b5c-3038-4331-b7d1-536d2ee4015a",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"
                         },
                         new
                         {
-                            Id = "3c49a50c-fc49-40dc-8736-8e06f845d4f9",
-                            ConcurrencyStamp = "a6c7fe90-d7ec-4760-9c02-1266f216c797",
+                            Id = "320b3d3d-754c-4c61-956d-77dbd7fe0a5c",
+                            ConcurrencyStamp = "0842576e-cc0e-4135-93fd-8dd1a71b6d3a",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         });
