@@ -1,22 +1,28 @@
 # CobranzasAPI
-API Facturacion Salud
-
-Proyecto elaborado en .NET. El sistema permite obtener datos de Obras
-Sociales, crear o editar las facturas y
-comprobantes con sus objetos relacionados y
-gestionar los cobros, mediante una agenda de
-llamados a los prestadores.
+API Facturacion Salud. Desarrollado con .NET. El sistema permite:
+<ul>
+    <li>*Registrarse como usuario, perteneciendo a un punto de venta específico de la red de centros de salud</li>
+    <li>*Registrar y obtener datos de Obras sociales, prepagas y ART</li>
+    <li>*Crear y anular facturas</li>
+    <li>*Crear recibos, especificando el medio de pago y los items a cobrar</li>
+    <li>*Crear notas de crédito y débito</li>
+    <li>*Gestionar el cobro de las facturas mediante un registro de contactos realizados por el usuario, respuesta y contactos futuros</li>
+</ul>
 
 Para este proyecto se utilizó:
-<p> -C# con patrón de repositorio 
- <p/>
-<p> -.NET 5.0 con Entity Framework 
-<p/>
-<p> -Microsoft SQL Server 2019 
-<p/>
-<p>-Autenticación con JWT 
- <p/>
-<p>-Modelo Code First 
-<p/>
-<p>-Swagger/OpenAPI<p/>
 
+
+
+<ul>
+    <li>*C# con patrón de repositorio
+    </li>
+   <li>*.NET 5.0 con Entity Framework 
+   </li>
+   <li>*Microsoft SQL Server 2019 
+   </li>
+   <li>*Autenticación con JWT 
+    </li>
+   <li>*Modelo Code First 
+   </li>
+   <li>*Swagger/OpenAPI</li>
+</ul>
