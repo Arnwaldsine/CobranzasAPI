@@ -27,4 +27,4 @@ Para este proyecto se utilizó:
    <li>*Swagger/OpenAPI</li>
 </ul>
 
-Diagrama entidad-relación dispomible
+Diagrama entidad-relación disponible
